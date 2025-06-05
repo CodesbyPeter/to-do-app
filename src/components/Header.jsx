@@ -9,7 +9,7 @@ function Header({ darkMode, toggleDarkMode }) {
            aria-label={ darkMode ? 'Switch to light mode' : 'Switch to dark mode'}
            title={ darkMode ? 'Switch to light mode' : 'Switch to dark mode'}>
             
-           {darkMode ? '\u1F319' : '\u1F31E'}
+           {darkMode ? String.fromCodePoint(0x1F319) : String.fromCodePoint(0x1F31E)}
            </button>
         </header>
     );
