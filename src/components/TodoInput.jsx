@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 
+
 function TodoInput({ addTodo}) {
+
+    const [inputValue, setInputValue] = useState("");
 
     const handleSubmit = (e) => {
         e.preventDefault();      // Prevents page reload
@@ -9,7 +12,7 @@ function TodoInput({ addTodo}) {
             setInputValue("");     // Clears the input field
         }
 
-    const [inputValue, setInputValue] = useState("");
+    
     return (
         <form onSubmit={handleSubmit}>
           <input 
