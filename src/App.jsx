@@ -4,6 +4,7 @@ import TodoInput from "./components/TodoInput";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
+  const [todos, setTodos] = useState([]); // Added this line to define the todos state
 
   const addTodo = (text) => {
     setTodos([...todos, { id: Date.now(), text, completed: false }]);
